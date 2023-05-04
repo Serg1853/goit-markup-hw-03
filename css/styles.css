@@ -51,8 +51,8 @@ button {
   /* outline: 1px solid tomato; */
 }
 .page-header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
   border: 1px solid #e7e9fc;
 }
 .page-header-container {
@@ -69,6 +69,7 @@ button {
   padding-bottom: 120px;
 }
 .logo {
+  margin-right: 76px;
   color: #4d5ae5;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -78,7 +79,6 @@ button {
   text-transform: uppercase;
 }
 .logo-studio {
-  margin-right: 76px;
   color: var(--primary-text-color);
 }
 .menu {
@@ -92,6 +92,9 @@ button {
 .menu :hover,
 .menu :focus {
   color: #404bbf;
+}
+.menu-item {
+  padding: 24px 0;
 }
 .contact {
   display: flex;
@@ -117,7 +120,7 @@ button {
   background: #2e2f42;
 }
 .hero-title {
-  width: 496px;
+  max-width: 496px;
   height: 120px;
   margin-left: auto;
   margin-right: auto;
@@ -130,7 +133,10 @@ button {
   letter-spacing: 0.02em;
 }
 .button {
-  display: flex;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
   flex-direction: row;
   align-items: flex-start;
   padding: 16px 32px;
@@ -160,6 +166,9 @@ button {
   display: flex;
   align-items: center;
   gap: 24px;
+}
+.features-list {
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 .features-title {
   margin-bottom: 8px;
@@ -208,6 +217,9 @@ button {
   text-transform: capitalize;
   background: #f4f4fd;
 }
+.our-team-card {
+  padding: 32px 16px;
+}
 .our-team-list {
   display: flex;
   align-items: center;
@@ -218,7 +230,6 @@ button {
   border-radius: 0px 0px 4px 4px;
 }
 .our-team-title {
-  margin-top: 32px;
   margin-bottom: 8px;
   color: var(--primary-text-color);
   font-weight: 500;
@@ -232,7 +243,10 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
-  margin-bottom: 32px;
+}
+.footer {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-logo {
   padding-top: 100px;
@@ -244,7 +258,6 @@ button {
 }
 .footer-text {
   width: 264px;
-  margin-top: 16px;
   color: #f4f4fd;
   font-weight: 400;
   line-height: 1.5;
