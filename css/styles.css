@@ -88,12 +88,14 @@ button {
   color: var(--primary-text-color);
   line-height: 1.5;
   letter-spacing: 0.02em;
+  /* padding: 24px 0; */
 }
 .menu :hover,
 .menu :focus {
   color: #404bbf;
 }
-.menu-item {
+.menu-link {
+  display: flex;
   padding: 24px 0;
 }
 .contact {
@@ -114,6 +116,9 @@ button {
 .address-link:focus {
   color: #404bbf;
 }
+
+/* section hero */
+
 .hero {
   padding-top: 188px;
   padding-bottom: 188px;
@@ -158,6 +163,9 @@ button {
 .button:focus {
   background: var(--secondary-bg-button);
 }
+
+/* section futures */
+
 .features {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -183,6 +191,9 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
+/* section our job */
+
 .section-our-job {
   padding-bottom: 120px;
 }
@@ -201,6 +212,9 @@ button {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
+
+/* section our team */
+
 .team {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -244,6 +258,9 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
 }
+
+/* footer */
+
 .footer {
   display: inline-block;
   margin-bottom: 16px;
@@ -263,6 +280,9 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
+/* Page Portfolio */
+
 .filters {
   padding-top: 96px;
   padding-bottom: 120px;
@@ -303,10 +323,14 @@ button {
 .button-hover:hover {
   background: var(--secondary-bg-button);
   color: #ffffff;
+  border: 1px solid transparent;
 }
-
+.filters-container {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
 .filters-images-title {
-  margin-top: 32px;
   margin-bottom: 8px;
   color: var(--primary-text-color);
   font-weight: 500;
@@ -315,7 +339,6 @@ button {
   letter-spacing: 0.02em;
 }
 .filters-images-text {
-  margin-bottom: 32px;
   color: var(--secondary-text-color);
   font-weight: 400;
   font-size: 16px;
